@@ -14,25 +14,25 @@
 <body>
     <header-component></header-component>
 
-    <h1>Our Process</h1>
+    <h1>NUESTRO PROCESO</h1>
     <br>
     <div class="process-wrapper">
         <div id="progress-bar-container">
             <ul>
                 <li class="step step01 active">
-                    <div class="step-inner">HOME WORK</div>
+                    <div class="step-inner">ANALISIS/LIMPIEZA DE DATOS</div>
                 </li>
                 <li class="step step02">
-                    <div class="step-inner">RESPONSIVE PART</div>
+                    <div class="step-inner">MODELADO DE LA BD</div>
                 </li>
                 <li class="step step03">
-                    <div class="step-inner">Creative cREATIONS</div>
+                    <div class="step-inner">CARGA DE DATOS Y CSV</div>
                 </li>
                 <li class="step step04">
-                    <div class="step-inner">TESTIMONIALS PART</div>
+                    <div class="step-inner">CONSULTAS SOBRE LOS DATOS</div>
                 </li>
                 <li class="step step05">
-                    <div class="step-inner">OUR LOCATIONS</div>
+                    <div class="step-inner">CONCLUSIONES Y RESULTADOS</div>
                 </li>
             </ul>
 
@@ -43,53 +43,77 @@
 
         <div id="progress-content-section">
             <div class="section-content discovery active">
-                <h2>HOME SECTION</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec neque justo, consequat non fermentum
-                    ac, tempor eu turpis. Proin nulla eros, placerat non ipsum ut, dapibus ullamcorper ex. Nulla in
-                    dapibus lorem. Suspendisse vitae velit ac ante consequat placerat ut sed eros. Nullam porttitor
-                    mattis mi, id fringilla ex consequat eu. Praesent pulvinar tincidunt leo et condimentum. Maecenas
-                    volutpat turpis at felis egestas malesuada. Phasellus sem odio, venenatis at ex a, lacinia suscipit
-                    orci.</p>
+                <h2>ANALISIS/LIMPIEZA DE DATOS</h2>
+                <p>El proceso de analisis de datos comprede varias etapas cruciales, desde la recopilacion inicial hasta la limpieza, transformacion
+                    , modelado y analisis efectivo. Cada una de estas etapas no solo requiere eñ uso de herramientas y tecnocas especializadas, sino también un enfoque 
+                    metodico y estructurado para asegurar la calidad y la relevancia de los resultados obtenidos.
+                </p>
             </div>
 
             <div class="section-content strategy">
-                <h2>GALLERY SECTION</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec neque justo, consequat non fermentum
-                    ac, tempor eu turpis. Proin nulla eros, placerat non ipsum ut, dapibus ullamcorper ex. Nulla in
-                    dapibus lorem. Suspendisse vitae velit ac ante consequat placerat ut sed eros. Nullam porttitor
-                    mattis mi, id fringilla ex consequat eu. Praesent pulvinar tincidunt leo et condimentum. Maecenas
-                    volutpat turpis at felis egestas malesuada. Phasellus sem odio, venenatis at ex a, lacinia suscipit
-                    orci.</p>
+                <h2>MODELADO DE LA BD</h2>
+                <body>
+                    <h1>Modelado de Bases de Datos</h1>
+                    <h2>Diseño Conceptual</h2>
+                    <p>En esta etapa, creamos un <strong>Modelo Entidad-Relación (E-R)</strong>:</p>
+                    <ul>
+                        <li>Identificamos las <strong>entidades</strong> y sus <strong>atributos</strong>.</li>
+                        <li>Establecemos las <strong>relaciones</strong> entre las entidades.</li>
+                        <li>El modelo E-R es una representación visual de alto nivel.</li>
+                    </ul>
+                
+                    <h2>Diseño Lógico</h2>
+                    <p>Transformamos el modelo E-R en un <strong>Modelo Relacional</strong>:</p>
+                    <ul>
+                        <li>Cada entidad se convierte en una <strong>tabla</strong>.</li>
+                        <li>Definimos las <strong>claves primarias</strong> y las <strong>claves foráneas</strong>.</li>
+                        <li>Establecemos <strong>restricciones de integridad</strong>.</li>
+                    </ul>
+                
+                    <h2>Pasos Clave</h2>
+                    <ol>
+                        <li>Identificación de entidades y relaciones.</li>
+                        <li>Definición de atributos.</li>
+                        <li>Normalización para evitar redundancias.</li>
+                        <li>Creación de esquemas de tablas.</li>
+                    </ol>
+                </body>
             </div>
 
             <div class="section-content creative">
-                <h2>Creative CREATIONS</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec neque justo, consequat non fermentum
-                    ac, tempor eu turpis. Proin nulla eros, placerat non ipsum ut, dapibus ullamcorper ex. Nulla in
-                    dapibus lorem. Suspendisse vitae velit ac ante consequat placerat ut sed eros. Nullam porttitor
-                    mattis mi, id fringilla ex consequat eu. Praesent pulvinar tincidunt leo et condimentum. Maecenas
-                    volutpat turpis at felis egestas malesuada. Phasellus sem odio, venenatis at ex a, lacinia suscipit
-                    orci.</p>
+                <h2>CARGA DE DATOS Y CSV</h2>
+                <p>El proyecto se centró en unificar y analizar exhaustivamente múltiples fuentes de datos sobre detenciones desde 2016 hasta 2024. Se aplicaron diversas herramientas y tecnologías para convertir, normalizar y unificar datos de diferentes años y formatos en una estructura coherente y analizable. Los pasos clave incluyeron:</p>
+                <ol>
+                    <li><strong>Preparación y Conversión de Datos</strong>: Se utilizó <code>csvkit</code> para convertir hojas de Excel a CSV y scripts de partición para manejar datos de múltiples años.</li>
+                    <li><strong>Normalización de Esquemas</strong>: Se crearon y adaptaron esquemas específicos para garantizar consistencia en las columnas a lo largo de los diferentes años.</li>
+                    <li><strong>Procesamiento con Spark y Python</strong>: Se emplearon Spark y Scala para datos iniciales, y Python con Pandas para datos más recientes, asegurando limpieza y transformación de datos.</li>
+                    <li><strong>Uso del Formato Parquet</strong>: Se implementó Parquet para almacenamiento eficiente y acceso rápido a los datos unificados.</li>
+                </ol>
+                <p>La base de datos MySQL está completamente implementada y cargada con los datos finales, lista para análisis detallados, proporcionando insights valiosos sobre las detenciones a lo largo de los años.</p>
             </div>
 
             <div class="section-content production">
-                <h2>TESTIMONIALS NOW</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec neque justo, consequat non fermentum
-                    ac, tempor eu turpis. Proin nulla eros, placerat non ipsum ut, dapibus ullamcorper ex. Nulla in
-                    dapibus lorem. Suspendisse vitae velit ac ante consequat placerat ut sed eros. Nullam porttitor
-                    mattis mi, id fringilla ex consequat eu. Praesent pulvinar tincidunt leo et condimentum. Maecenas
-                    volutpat turpis at felis egestas malesuada. Phasellus sem odio, venenatis at ex a, lacinia suscipit
-                    orci.</p>
+                <h2>CONSULTAS SOBRE LOS DATOS</h2>
+                <p>Consulta 1: Relacionar detenciones por edad con tasa de asistencia a educación básica y bachillerato</p>
+                <p>Consulta 2: Relacionar detenidos por nivel de instrucción con tasa de asistencia a educación básica y bachillerato</p>
+                <p>Consulta 3: Relacionar estado civil de los detenidos con tasa de empleo inadecuado</p>
+                <p>Consulta 4: Relacionar nombre de provincia (Pichincha) con datos de drogas</p>
             </div>
 
             <div class="section-content analysis">
-                <h2>OUR LOCATIONS</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec neque justo, consequat non fermentum
-                    ac, tempor eu turpis. Proin nulla eros, placerat non ipsum ut, dapibus ullamcorper ex. Nulla in
-                    dapibus lorem. Suspendisse vitae velit ac ante consequat placerat ut sed eros. Nullam porttitor
-                    mattis mi, id fringilla ex consequat eu. Praesent pulvinar tincidunt leo et condimentum. Maecenas
-                    volutpat turpis at felis egestas malesuada. Phasellus sem odio, venenatis at ex a, lacinia suscipit
-                    orci.</p>
+                <h2>CONCLUSIONES Y RESULTADOS</h2>
+                <p>El presente proyecto se ha centrado en unificar y analizar exhaustivamente múltiples fuentes de datos sobre detenciones desde 2016 hasta 2024. A través de la aplicación de diversas herramientas y tecnologías, se logró convertir, normalizar y unificar datos procedentes de distintos años y formatos en una estructura coherente y analizable. Este proceso abarcó:</p>
+                <ul>
+                    <li><strong>Preparación y Conversión de Datos</strong>: Se utilizó <code>csvkit</code> para convertir hojas de Excel a CSV y scripts de partición para manejar datos de múltiples años.</li>
+                    <li><strong>Normalización de Esquemas</strong>: Se crearon y adaptaron esquemas específicos para garantizar consistencia en las columnas a lo largo de los diferentes años.</li>
+                    <li><strong>Procesamiento con Spark y Python</strong>: Se emplearon Spark y Scala para datos iniciales, y Python con Pandas para datos más recientes, garantizando limpieza y transformación de datos para compatibilidad.</li>
+                    <li><strong>Uso del Formato Parquet</strong>: Se implementó Parquet para almacenamiento eficiente y rápido acceso a los datos unificados.</li>
+                    <li><strong>Diseño Conceptual y Lógico</strong>: Se desarrolló un Modelo Entidad-Relación (E-R) transformado en un Modelo Relacional para estructurar la base de datos.</li>
+                    <li><strong>Generación e Implementación del Script DDL</strong>: Se creó un script SQL para implementar la base de datos en MySQL.</li>
+                    <li><strong>Preparación y Carga de Datos</strong>: Se importaron datos base y complementarios en la base de datos MySQL.</li>
+                    <li><strong>Generación de un Archivo CSV</strong>: Se creó un archivo CSV con todas las variables relevantes para análisis.</li>
+                </ul>
+                <p>El resultado obtenido es una base de datos MySQL completamente implementada y cargada con los datos finales, lista para análisis detallados. Esta base de datos facilitará la realización de análisis de tendencias, geográficos, demográficos y de correlación, proporcionando valiosos insights sobre las detenciones a lo largo de los años.</p>
             </div>
         </div>
     </div>
